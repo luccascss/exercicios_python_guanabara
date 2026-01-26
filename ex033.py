@@ -1,0 +1,7 @@
+print('O programa a seguir analisará três números da sua escolha e dirá qual é o maior e qual o menor.')
+num_1 = float(input('Digite um número: '))
+num_2 = float(input('Digite um número: '))
+num_3 = float(input('Digite um número: '))
+num_maior = max(num_1, num_2, num_3)
+num_menor = min(num_1, num_2, num_3)
+print('O maior número é {} e o menor número é {}'.format(num_maior, num_menor))

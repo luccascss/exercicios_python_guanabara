@@ -1,0 +1,5 @@
+print('O programa a seguir analisará o nome de cidade informado e dirá se ele começa ou não com o palavra "SANTO"')
+nome = str(input('Digite o nome da cidade: ')).strip()
+nome_upper = nome.lower()
+nome_sem_espaco = nome_upper.split()
+print('santo' in nome_sem_espaco[0])
