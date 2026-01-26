@@ -5,7 +5,7 @@ jogador_soma = 1
 computador = randint(0, 10)
 print('Nesse jogo, eu pensarei em um número entre 0 e 10 e cabe a você descobrir que número é esse!')
 jogador = int(input('Digite seu palpite: '))
-while computador != jogador:
+while computador != jogador: #loop até que o jogador acerte o número escolhido pelo computador
     if jogador > 10 or jogador < 0:
         print('Sem bancar o espertinho hein....')
         sleep(2)
@@ -17,7 +17,7 @@ while computador != jogador:
             jogador = int(input('Digite seu palpite novamente: '))
 #computador == jogador (está fora do while pois o mesmo acaba assim que a condição é alcançada)
 if jogador_soma == 1:
-    print('Você acertou de primeira... INACREDITÁVEL!!!!')
+    print('Você acertou de primeira... INACREDITÁVEL!!!!!')
     sleep(2)
     print('Sério, não acredito em você. Você espiou o meu código né?!!')
     sleep(3)
