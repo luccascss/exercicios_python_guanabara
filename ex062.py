@@ -10,10 +10,13 @@ while add_termo != 0:
     if add_termo > 0:
         total = total + add_termo
         while contador <= total:
-            print(f'{termo} ➡ ', end='')
+            if contador < total:
+                print(f'{termo} ➡ ',end='')
+            elif contador == total:
+                print(f'{termo} ➡ FIM')
             contador = contador + 1
             termo = termo + razao
-    print('FIM')
+    print()
     add_termo = int(input('Quer adicionar mais quantos termos? '))
     if add_termo == 0:
         print('Finalizando...')
