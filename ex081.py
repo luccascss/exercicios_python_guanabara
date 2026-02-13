@@ -7,7 +7,7 @@ while True:
     lista_num.append(int(input(f'Digite o {contador}° número: ')))
     while resposta != 'N' and resposta != 'S':
         resposta = str(input('Deseja continuar? [S/N] ')).strip().upper()
-        if resposta not in 'SN':
+        if resposta != 'N' and resposta != 'S':
             print('Escolha [ S ] para sim')
             print('Escolha [ N ] para não')
     if resposta == 'N':
