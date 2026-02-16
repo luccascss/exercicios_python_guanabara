@@ -7,7 +7,6 @@ menor_peso = 0
 pessoas = list()
 nome_peso_maior = list()
 nome_peso_menor = list()
-cont_for = 0
 while True:
     nome = str(input('Nome: ')).strip().upper()
     peso = float(input('Peso: [Kg] '))
@@ -36,7 +35,6 @@ while True:
     elif resposta == 'N':
         break
 for p in dados:
-    cont_for = cont_for + 1
     pessoas.append(p[0])
     if maior_peso == p[1]:
         nome_peso_maior.append(p[0])
