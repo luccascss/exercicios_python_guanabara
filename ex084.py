@@ -11,7 +11,7 @@ while True:
     nome = str(input('Nome: ')).strip().upper()
     peso = float(input('Peso: [Kg] '))
     if peso < 0:
-        print('Idade digitada inválida.')
+        print('Peso digitado inválido.')
     else:
         dados_temp.append(nome)
         dados_temp.append(peso)
