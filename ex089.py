@@ -3,6 +3,7 @@ dados = list()
 nome_temp = list()
 nota_temp = list()
 resp = ''
+print('========== COLÉGIO GALOTITO ===========')
 while True:
     nome = str(input('Nome: ')).strip().upper()
     nota_01 = float(input('1ª nota: '))
@@ -27,15 +28,15 @@ print('=' * 30)
 print('REFERÊNCIA (N°: NOME -> MÉDIA)')
 print('-' * 30)
 for i, d in enumerate(dados):
-    print(f'{i}: {d[0]} -> {((d[1][0] + d[1][1]) / 2)}')
+    print(f'{i + 1}: {d[0]} -> {((d[1][0] + d[1][1]) / 2)}')
 print('-' * 80)
 print('Escolha um número referente a um aluno para ver suas notas separadamente:')
 num = -1 # variável de controle do loop
-while num != 999:
+while num != 998:
     print('[ 999 ] para finalizar')
-    num = int(input('Digite sua escolha: '))
+    num = int(input('Digite sua escolha: ')) - 1
     print('-' * 30)
-    if num == 999:
+    if num == 998:
         print('Finalizando...')
     elif num >= len(dados):
         print('Digite um valor válido!')
