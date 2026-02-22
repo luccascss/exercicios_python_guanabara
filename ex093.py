@@ -14,4 +14,5 @@ for k, v in dados_jogador.items():
 print(f'O {dados_jogador['nome']} jogou {partidas} partidas.')
 for i, g in enumerate(gol_jogador):
     print(f'-> Na partida {i + 1}, fez {g}.')
+print(f'Foi um total de {dados_jogador['total_gols']} gols.')
 
