@@ -18,12 +18,16 @@ while True:
         cont = str(input('Quer continuar? [S/N] ')).strip().upper()
         if cont != 'S' and cont != 'N':
             print('Opção inválida.')
+            print('=' * 30)
     if cont == 'S':
+        print('-' * 90)
         cont = ''
     if cont == 'N':
         print('Calculando...')
+        print('-' * 90)
         break
 print(f'{'Código'} {'Nome':<20} {'Gols':<50} {'Total gols':<5}')
+print('-' * 90)
 for i, data in enumerate(dados_jogadores):
     print(f'{i + 1:>6} {data['nome']:<20} {str(data['gols'])[:45]:<50} {data['total_gols']:<5}')
 while True:
@@ -38,3 +42,4 @@ while True:
         print(f'Levantamento do jogador {dados_jogadores[lev]['nome']}:')
         for i, gols in enumerate(dados_jogadores[lev]['gols']):
             print(f'No jogo {i + 1} fez {gols} gols.')
+    print('-' * 80)
