@@ -8,9 +8,12 @@ def sorteia():
     return num
 def somapar(lst):
     soma = 0
-    for num_par in lst:
-        if num_par % 2 == 0:
-            soma += num_par
+    for valor in lst:
+        if valor % 2 == 0:
+            soma += valor
     print(f'A soma dos números pares é de {soma}')
+
+
+#programa principal
 somapar(sorteia())
 
