@@ -1,14 +1,14 @@
 # faça uma função com nome contador() que receba 3 parâmetros: início, fim e passo e realize a contagem
-def contador(a, b, c):
-    if c == 0:
-        c = 1
-    if a > b:
-        b = b - 1
-    if b > a:
-        b = b + 1
-    if a > b and c > 0 or b > a and c < 0:
-        c = c * -1
-    for cont in range(a, b, c):
+def contador(inicio, fim, passo):
+    if passo == 0:
+        passo = 1
+    if inicio > fim:
+        fim = fim - 1
+    if fim > inicio:
+        fim = fim + 1
+    if inicio > fim and passo > 0 or fim > inicio and passo < 0:
+        passo = passo * -1
+    for cont in range(inicio, fim, passo):
         print(f'{cont}, ',end='')
     print('FIM!')
 def linha():
