@@ -1,8 +1,9 @@
 # função chamada escreva() que receba um texto qualquer e mostre uma msg de tamanho adaptável
 def escreva(txt):
-    print('~' * (len(txt) + 4))
-    print(f'{txt:^{len(txt) + 4}}')
-    print('~' * (len(txt) + 4))
+    tam = len(txt) + 4
+    print('~' * tam)
+    print(f'{txt:^{tam}}')
+    print('~' * tam)
 
 
 #programa principal
