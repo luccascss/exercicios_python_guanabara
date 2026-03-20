@@ -1,5 +1,11 @@
 # crie função fatorial() que receba 2 parâmetros: o primeiro que indique o número a calcular e outro chamado "show" que será um valor lógico opcional indicando se será mostrado ou não o processo de cálculo.
 def fatorial(num, show=False):
+    """
+    — > Calcula o Fatorial! de um número.
+    :param num: Número a ser calculado
+    :param show: (opcional) Mostrar ou não o cálculo
+    :return: O valor do Fatorial! de um número num
+    """
     n = 1
     for c in range(num, 0, -1):
         if show:
@@ -13,3 +19,4 @@ def fatorial(num, show=False):
 
 
 print(fatorial(5, False))
+print(help(fatorial))
